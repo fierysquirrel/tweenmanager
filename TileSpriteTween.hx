@@ -1,4 +1,4 @@
-package fs.tweenmanager;
+package;
 
 import aze.display.TileSprite;
 

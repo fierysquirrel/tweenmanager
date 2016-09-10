@@ -1,8 +1,6 @@
-package fs.tweenmanager;
+package;
 
 import aze.display.TileSprite;
-import fs.helper.TweenHelper;
-import fs.helper.MathHelper;
 
 class TweenTileSprite extends Tween
 {

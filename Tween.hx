@@ -1,7 +1,6 @@
-package fs.tweenmanager;
-import fs.tweenmanager.Tween.Type;
+package;
 
-enum Type
+enum TweenType
 {
 	Position;
 	Scale;
@@ -14,7 +13,7 @@ class Tween
 {
 	public static var NAME : String = "TWEEN";
 	
-	private var type : Type;
+	private var type : TweenType;
 	private var duration : Float;
 	private var iniX : Float;
 	private var iniY : Float;
@@ -54,15 +53,15 @@ class Tween
 	{
 		switch(type)
 		{
-			case Type.Alpha:
+			case TweenType.Alpha:
 				UpdateAlpha(gameTime);
-			case Type.Color:
+			case TweenType.Color:
 				UpdateAlpha(gameTime);
-			case Type.Position:
+			case TweenType.Position:
 				UpdatePosition(gameTime);
-			case Type.Rotation:
+			case TweenType.Rotation:
 				UpdateRotation(gameTime);
-			case Type.Scale:
+			case TweenType.Scale:
 				UpdateScale(gameTime);
 		}
 		
@@ -71,14 +70,14 @@ class Tween
 	
 	public function ChangeAlpha(endAlpha : Float) : Void
 	{
-		type = Type.Alpha;
+		type = TweenType.Alpha;
 		this.endAlpha = endAlpha;
 		currentTime = 0;
 	}
 	
 	public function ChangeColor(endR : Float,endG : Float,endB : Float) : Void
 	{
-		type = Type.Color;
+		type = TweenType.Color;
 		this.endR = endR;
 		this.endG = endG;
 		this.endB = endB;
@@ -87,7 +86,7 @@ class Tween
 	
 	public function Move(endX : Float, endY : Float) : Void
 	{
-		type = Type.Position;
+		type = TweenType.Position;
 		this.endX = endX;
 		this.endY = endY;
 		currentTime = 0;
@@ -95,14 +94,14 @@ class Tween
 	
 	public function Rotate(endRot : Float) : Void
 	{
-		type = Type.Rotation;
+		type = TweenType.Rotation;
 		this.endRot = endRot;
 		currentTime = 0;
 	}
 	
 	public function Scale(endScaleX: Float,endScaleY: Float) : Void
 	{
-		type = Type.Scale;
+		type = TweenType.Scale;
 		this.endScaleX = endScaleX;
 		this.endScaleY = endScaleY;
 		currentTime = 0;

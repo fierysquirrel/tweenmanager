@@ -1,8 +1,8 @@
-package fs.tweenmanager;
+package;
 
 import aze.display.TileSprite;
 
-class TileSpriteTween extends Tween
+class TileGroupTween extends Tween
 {
 	public static var NAME : String = "TWEEN";
 	
