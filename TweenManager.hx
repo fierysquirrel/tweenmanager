@@ -1,6 +1,6 @@
 package;
 
-import aze.display.TileSprite;
+import openfl.display.Tile;
 
 /**
  * ...
@@ -25,7 +25,7 @@ class TweenManager
 			t.Update(gameTime);
 	}
 	
-	public function TweenTileSpritePosition(obj : TileSprite,duration : Float, endX : Float, endY : Float) : Void
+	public function TweenTileSpritePosition(obj : Tile,duration : Float, endX : Float, endY : Float) : Void
 	{
 		var t : Tween;
 		t = new TweenTileSprite(obj, duration);

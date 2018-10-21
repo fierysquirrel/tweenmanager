@@ -1,12 +1,12 @@
 package;
 
-import aze.display.TileSprite;
+import openfl.display.Tile;
 
 class TweenTileSprite extends Tween
 {
-	private var object : TileSprite;
+	private var object : Tile;
 	
-	public function new(object : TileSprite,duration : Float) 
+	public function new(object : Tile,duration : Float) 
 	{
 		super(duration);
 		
