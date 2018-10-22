@@ -1,0 +1,14 @@
+{
+  "name": "Tween Manager",
+  "url": "http://fierysquirrel.com/",
+  "license": "MIT",
+  "tags": ["openfl","ttween","smooth"],
+  "description": "Handles all Tween functions. Helps creating smooth transitions between values.",
+  "version": "1.1",
+  "releasenote": "Upgraded library to new OpenFL and Haxe",
+  "contributors": ["fierysquirrel"],
+  "dependencies": 
+  {
+    "openfl":""
+  }
+}
